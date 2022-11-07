@@ -81,18 +81,19 @@ document.querySelector("#slider").addEventListener("change", function() {
 //oldschool button:
 document.querySelector("#vintage").addEventListener("click", function() {
 	console.log("Old school button pressed")
-	video.style.filter = "grayscale(100%)";
-	video.style.width = "75%";
-	video.style.border = "5px double grey"
-	video.style.borderRadius = "20px";
-	console.log("width changed")
+	// video.style.filter = "grayscale(100%)";
+	// video.style.width = "75%";
+	// video.style.border = "5px double grey"
+	// video.style.borderRadius = "20px";
+	video.classList.add("oldSchool")
 })
 
 document.querySelector("#orig").addEventListener("click", function() {
 	console.log("Original button pressed")
-	video.style.filter = "none";
-	video.style.width = "90%";
-	video.style.border = "2px solid black";
-	video.style.borderRadius = "initial";
+	// video.style.filter = "none";
+	// video.style.width = "90%";
+	// video.style.border = "2px solid black";
+	// video.style.borderRadius = "initial";
+	video.classList.remove("oldSchool");
 
 })
